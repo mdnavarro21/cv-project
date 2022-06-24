@@ -1,10 +1,10 @@
 import React, {Component} from "react";
-
+import '../../styles/Overview.css'
 class Overview extends Component {
 
     render() {
         return (
-            <div>My CV</div>
+            <div id = 'overview'>My CV</div>
         )
     }
 }

@@ -1,0 +1,29 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form input {
+    border-radius: 5px;
+    width: 80%;
+    height: 2rem;
+    font-size: 1rem;
+
+    padding-left: 1rem;
+}
+#cv-form-container {
+    border-style: solid;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    width: 35%;
+    height: auto;
+}
+
+#cv-form-container > * {
+    border-style: solid;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding-left: 1rem;
+}

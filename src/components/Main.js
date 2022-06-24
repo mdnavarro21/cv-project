@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Form from './main-components/Form'
 import Overview from './main-components/Overview'
-
+import '../styles/Main.css';
 
 class Main extends Component {
     constructor(){
@@ -19,7 +19,7 @@ class Main extends Component {
                 schoolName: '',
                 degreeName: '',
                 programName: '',
-                dateOfStudy: '',                
+                dateOfStudy: ''             
             },
 
             experience: {
@@ -36,7 +36,7 @@ class Main extends Component {
         const target = event.target;
         const value = target.value;
         const name = target.name;
-        const section = target.parentNode.parentNode.id;
+        const section = target.parentNode.id;
         const object = this.state[section];
         let {[name]: _, ...spread} = object
         this.setState({
@@ -50,7 +50,6 @@ class Main extends Component {
     render() {
         return (
             <main>
-                <h2>Main Section</h2>
                 <Form handleInputChange = {this.handleInputChange} mainState = {this.state}/>
                 <Overview />
             </main>

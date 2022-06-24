@@ -4,44 +4,35 @@ class Experience extends Component {
     render() {
         const { onChange, experienceState } = this.props;
         return (
-            <form id = 'experience'>
-                <label htmlFor="company-name">Company Name: 
+            <section>
+                <h1>Experience</h1>
+                <form id = 'experience'>
                     <input
                         type = 'text'
                         name = 'companyName'
                         onChange = { onChange }
                         value = { experienceState.companyName }
                         id = 'company-name'
+                        placeholder="Company Name"
                     />
-                </label>
-                <label htmlFor="position-title">Position Title: 
                     <input
                         type = 'text'
                         name = 'positionTitle'
                         onChange = { onChange }
                         value = { experienceState.positionTitle }
                         id = 'position-title'
+                        placeholder="Position Title"
                     />
-                </label>
-                <label htmlFor="main-tasks">Main Tasks: 
-                    <input
-                        type = 'textarea'
-                        name = 'mainTasks'
-                        onChange = { onChange }
-                        value = { experienceState.mainTasks }
-                        id = 'main-tasks'
-                    />
-                </label>
-                <label htmlFor="main-tasks">Main Tasks: 
-                    <input
-                        type = 'textarea'
-                        name = 'mainTasks'
-                        onChange = { onChange }
-                        value = { experienceState.mainTasks }
-                        id = 'main-tasks'
-                    />
-                </label>
-                <label htmlFor="start-date">Start Date: 
+                    <label htmlFor="main-tasks">Main Tasks:</label>
+                    <textarea 
+                        id="main-tasks" 
+                        name="mainTasks" 
+                        onChange = {onChange} 
+                        value = {experienceState.mainTasks} 
+                        rows="5" 
+                        cols="33">
+                    </textarea>
+                    <label htmlFor="start-date">Start Date:</label>
                     <input
                         type = 'date'
                         name = 'startDate'
@@ -49,8 +40,7 @@ class Experience extends Component {
                         value = { experienceState.startDate }
                         id = 'start-date'
                     />
-                </label>
-                <label htmlFor="end-date">End Date: 
+                    <label htmlFor="end-date">End Date:</label>
                     <input
                         type = 'date'
                         name = 'endDate'
@@ -58,8 +48,8 @@ class Experience extends Component {
                         value = { experienceState.endDate }
                         id = 'end-date'
                     />
-                </label>
-            </form>
+                </form>
+            </section>
         )
     }
 }
