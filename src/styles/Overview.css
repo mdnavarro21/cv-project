@@ -10,4 +10,7 @@
     grid-template-rows: 1fr 1fr 1fr;
 
     padding: 2rem;
+
+    background-color: #f0f9ff;
+    color: black;
 }

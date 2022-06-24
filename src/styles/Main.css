@@ -1,7 +1,7 @@
 main {
     display: flex;
     justify-content: space-around;
-    border-style: solid;
+
 
     height: 180vh;
     width: 100%;
