@@ -2,9 +2,12 @@ main {
     display: flex;
     justify-content: space-around;
 
-
     height: 180vh;
     width: 100%;
 
 
+}
+
+main > * {
+    margin-top: 20px;
 }
