@@ -32,13 +32,15 @@ class General extends Component {
                         id = 'email'
                         placeholder="Email Address"
                     />
-                    <input
-                        type = 'text'
-                        name = 'phoneNo'
+
+                    <input 
+                        type="tel" 
+                        id="phoneNo" 
+                        name="phoneNo" 
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        placeholder="Phone Number"
                         onChange = { onChange }
                         value = { generalState.phoneNo }
-                        id = 'phoneNo'
-                        placeholder="Phone Number"
                     />
                 </form>
             </section>

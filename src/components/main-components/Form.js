@@ -6,12 +6,13 @@ import '../../styles/Form.css'
 class Form extends Component {
 
     render() {
-        const { handleInputChange, mainState } = this.props;
+        const { handleInputChange, mainState, onFormSubmit } = this.props;
         return (
             <div id = 'cv-form-container'>
                 <General onChange = {handleInputChange} generalState = {mainState.general}/>
                 <Education onChange = {handleInputChange} educationState = {mainState.education}/>
                 <Experience onChange = {handleInputChange} experienceState = {mainState.experience}/>
+                <button type = 'submit' onClick = {onFormSubmit}>Submit</button>
             </div>
         )
     }

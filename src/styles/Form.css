@@ -14,16 +14,22 @@ form input {
 }
 #cv-form-container {
     border-style: solid;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
 
-    width: 35%;
-    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr auto;
+
+    width: 40%;
+    height: 100%;
 }
 
-#cv-form-container > * {
+#cv-form-container > section{
     border-style: solid;
     display: grid;
     grid-template-rows: auto 1fr;
     padding-left: 1rem;
+}
+
+#cv-form-container > button {
+    width: 40%;
+    height: 40px;
 }

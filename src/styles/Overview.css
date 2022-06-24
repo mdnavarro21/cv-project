@@ -1,8 +1,13 @@
-#overview {
+#cv-overview {
     border-style: solid;
     width: 50%;
     height: 50%;
 
     position: sticky;
     top: 10px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    padding: 2rem;
 }

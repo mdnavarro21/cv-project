@@ -28,7 +28,9 @@ class Main extends Component {
                 mainTasks: '',
                 startDate: '',
                 endDate: '',
-            }
+            },
+
+            isSubmitted: false,
         }
     }
 
@@ -45,13 +47,19 @@ class Main extends Component {
                 [name]: value,
             }
         });
+    };
+
+    onFormSubmit = () => {
+        this.setState({
+            isSubmitted: true
+        })
     }
 
     render() {
         return (
             <main>
-                <Form handleInputChange = {this.handleInputChange} mainState = {this.state}/>
-                <Overview />
+                <Form handleInputChange = {this.handleInputChange} mainState = {this.state} onFormSubmit = {this.onFormSubmit}/>
+                {this.state.isSubmitted && <Overview mainState = {this.state}/>}
             </main>
         )
     }
