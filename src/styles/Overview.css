@@ -1,16 +1,16 @@
 #cv-overview {
-    border-style: solid;
-    width: 40%;
-    height: 88vh;
+  border-style: solid;
+  width: 40%;
+  height: 88vh;
 
-    position: sticky;
-    top: 10px;
+  position: sticky;
+  top: 10px;
 
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 
-    padding: 2rem;
+  padding: 2rem;
 
-    background-color: #f0f9ff;
-    color: black;
+  background-color: #f0f9ff;
+  color: black;
 }

@@ -1,38 +1,38 @@
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 form input {
-    border-radius: 5px;
-    width: 80%;
-    height: 2rem;
-    font-size: 1rem;
+  border-radius: 5px;
+  width: 80%;
+  height: 2rem;
+  font-size: 1rem;
 
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 #cv-form-container {
-    border-style: solid;
+  border-style: solid;
 
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr auto;
 
-    width: 40%;
-    height: 95%;
+  width: 40%;
+  height: 95%;
 
-    background-color: #bae6fd;
-    color: black;
+  background-color: #bae6fd;
+  color: black;
 }
 
 #cv-form-container > section {
-    border-style: solid;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    padding: 1rem;
+  border-style: solid;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 1rem;
 }
 
 #cv-form-container > button {
-    width: 40%;
-    height: 40px;
+  width: 40%;
+  height: 40px;
 }
